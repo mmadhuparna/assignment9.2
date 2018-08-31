@@ -1,16 +1,16 @@
 //creating constructor function
-function Airplane(model, seatingCapacity, maximumSpeed){
-this.model = model;
-this.seatingCapacity = seatingCapacity;
-this.maximumSpeed = maximumSpeed;
-this.print = function() // defining method 
+function Airplane(model, seatingCapacity, maximumSpeed)
 {
-  return "model:" + " " + this.model+ '\n' +
-  "seating capacity:" + " " +this.seatingCapacity+ '\n' +
-  "maximum speed:" + " " +   this.maximumSpeed + "km/hr";
-  }
+ this.model = model;
+ this.seatingCapacity = seatingCapacity;
+ this.maximumSpeed = maximumSpeed;
+ this.print = function() // defining method 
+ {
+   return "model:" + " " + this.model+ '\n' +
+   "seating capacity:" + " " +this.seatingCapacity+ '\n' +
+   "maximum speed:" + " " +   this.maximumSpeed + "km/hr";
+ }
 }
-
 var aero1 = new Airplane('lancair',50, 1000); //creating first object
 console.log("Description of First Airplane Object"); //display output in console
 console.log(aero1.print());
